@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home 2 - Digital Agency | NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <i class="fas fa-bolt"></i> NexGen
+            </a>
+            
+            <ul class="navbar-menu" style="margin-left: auto;">
+                <li class="navbar-item navbar-dropdown">
+                    <a href="" class="active dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Home <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Home pages">
+                        <li><a href="../index.html" >Home 1</a></li>
+                        <li><a href="home-2.html" class="active">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                   <li class="navbar-item">
+                  <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL">
+                    <i class="fas fa-language"></i>
+                </button>
+                </li>
+                <li class="navbar-item">
+                <button id="theme-toggle" class="btn btn-sm btn-secondary" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                </li>
+                 <li class="navbar-item">
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                </li>
+                 <li>
+                <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+                </li>
+            </ul>
+            
+            <div class="navbar-actions">
+                
+                
+                <button class="mobile-menu-toggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - SaaS Style -->
+    <section class="hero" style="min-height: 100vh;">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div class="hero-content fade-in">
+                    <div style="display: inline-block; background: rgba(139, 92, 246, 0.1); color: var(--primary-color); padding: 0.5rem 1.5rem; border-radius: 2rem; font-size: 0.875rem; font-weight: 600; margin-bottom: 1.5rem;">
+                        ðŸš€ #1 Digital Agency Platform
+                    </div>
+                    <h1 class="hero-title" style="font-size: 3.5rem;">Transform Your Digital Presence</h1>
+                    <p class="hero-subtitle" style="font-size: 1.25rem;">
+                        We help businesses grow with cutting-edge digital solutions, from web development to marketing automation.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="contact.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket"></i> Start Your Project
+                        </a>
+                        <a href="#portfolio" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-play-circle"></i> View Our Work
+                        </a>
+                    </div>
+                    
+                    <div style="margin-top: 3rem; display: flex; align-items: center; gap: 2rem;">
+                        <div style="display: flex; align-items: center;">
+                            <img src="https://i.pravatar.cc/100?img=1" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid white; margin-left: -10px;">
+                            <img src="https://i.pravatar.cc/100?img=2" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid white; margin-left: -10px;">
+                            <img src="https://i.pravatar.cc/100?img=3" style="width: 40px; height: 40px; border-radius: 50%; border: 3px solid white; margin-left: -10px;">
+                            <div style="background: var(--primary-color); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-left: -10px; font-size: 0.75rem; font-weight: 700;">+99</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 700;">Trusted by 500+ Companies</div>
+                            <div style="color: var(--text-secondary); font-size: 0.875rem;">â­â­â­â­â­ 4.9/5 Rating</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div style="position: relative;">
+                    <div style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); border-radius: 2rem; padding: 3rem; box-shadow: var(--shadow-xl);">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800" alt="Digital Solutions" style="width: 100%; border-radius: 1rem; box-shadow: var(--shadow-lg);">
+                    </div>
+                    <!-- Floating Cards -->
+                    <div class="card" style="position: absolute; bottom: -30px; left: -30px; padding: 1.5rem; animation: float 3s ease-in-out infinite;">
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="width: 50px; height: 50px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--success-color); font-size: 1.5rem;">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; font-size: 1.25rem;">+250%</div>
+                                <div style="color: var(--text-secondary); font-size: 0.875rem;">Growth Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section" style="background: var(--bg-secondary);">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Digital Services</h2>
+                <p class="section-subtitle">Comprehensive solutions for your business growth</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card" style="transition: all 0.3s;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p style="color: var(--text-secondary);">Custom websites and web applications built with modern technologies.</p>
+                    <a href="service-details.html" style="color: var(--primary-color); font-weight: 600;">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="card" style="transition: all 0.3s;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--secondary-color), #db2777); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <h3>Digital Marketing</h3>
+                    <p style="color: var(--text-secondary);">SEO, social media, and paid advertising campaigns that drive results.</p>
+                    <a href="service-details.html" style="color: var(--primary-color); font-weight: 600;">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="card" style="transition: all 0.3s;">
+                    <div style="width: 70px; height: 70px; background: linear-gradient(135deg, var(--accent-color), #0891b2); border-radius: 1rem; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem; margin-bottom: 1.5rem;">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p style="color: var(--text-secondary);">Beautiful, user-centered designs that enhance user experience.</p>
+                    <a href="service-details.html" style="color: var(--primary-color); font-weight: 600;">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcasing our best work</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600" alt="Project" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3>E-Commerce Platform</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Full-stack development for online retail</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600" alt="Project" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3>Analytics Dashboard</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">Real-time data visualization platform</p>
+                    </div>
+                </div>
+                
+                <div class="card" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600" alt="Project" style="width: 100%; height: 250px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <h3>Mobile App Design</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem;">iOS & Android app UI/UX design</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); color: white;">
+        <div class="container">
+            <div class="grid grid-4 text-center">
+                <div>
+                    <div style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;" class="counter" data-target="500">0</div>
+                    <div style="opacity: 0.9;">Projects Completed</div>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;" class="counter" data-target="350">0</div>
+                    <div style="opacity: 0.9;">Happy Clients</div>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;" class="counter" data-target="15">0</div>
+                    <div style="opacity: 0.9;">Years Experience</div>
+                </div>
+                <div>
+                    <div style="font-size: 3rem; font-weight: 800; margin-bottom: 0.5rem;" class="counter" data-target="25">0</div>
+                    <div style="opacity: 0.9;">Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="container">
+            <div class="card text-center" style="padding: 4rem 2rem; background: linear-gradient(135deg, rgba(139, 92, 246, 0.1), rgba(236, 72, 153, 0.1));">
+                <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Ready to Start Your Project?</h2>
+                <p style="font-size: 1.25rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">
+                    Let's work together to bring your vision to life with our expert team.
+                </p>
+                <a href="contact.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-paper-plane"></i> Get Free Consultation
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <i class="fas fa-bolt"></i> NexGen
+                    </div>
+                    <p class="footer-description">
+                        The premier platform connecting brands with top-tier influencers and content creators worldwide.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/influencers.html">Influencers</a></li>
+                        <li><a href="pages/pricing.html">Pricing</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexgen.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexGen. All rights reserved. Made with <i class="fas fa-heart" style="color: var(--danger-color);"></i> by NexGen Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+

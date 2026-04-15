@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencers - NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <i class="fas fa-bolt"></i> NexGen
+            </a>
+            
+            <ul class="navbar-menu" style="margin-left: auto;">
+                <li class="navbar-item navbar-dropdown">
+                    <a href="" class=" dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Home <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Home pages">
+                        <li><a href="../index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="blog.html">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                   <li class="navbar-item">
+                  <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL">
+                    <i class="fas fa-language"></i>
+                </button>
+                </li>
+                <li class="navbar-item">
+                <button id="theme-toggle" class="btn btn-sm btn-secondary" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                </li>
+                 <li class="navbar-item">
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                </li>
+                 <li>
+                <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+                </li>
+            </ul>
+            
+            <div class="navbar-actions">
+              
+                
+                <button class="mobile-menu-toggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h1 class="section-title">Discover Top Influencers</h1>
+                <p class="section-subtitle">Find the perfect creators for your brand campaigns</p>
+            </div>
+            
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" class="search-input" placeholder="Search influencers by name, niche, or keywords...">
+                </div>
+                <select class="form-select" style="width: auto; min-width: 200px;">
+                    <option>All Categories</option>
+                    <option>Fashion</option>
+                    <option>Tech</option>
+                    <option>Beauty</option>
+                    <option>Travel</option>
+                    <option>Lifestyle</option>
+                </select>
+                <select class="form-select" style="width: auto; min-width: 150px;">
+                    <option>Followers</option>
+                    <option>1K - 10K</option>
+                    <option>10K - 100K</option>
+                    <option>100K - 1M</option>
+                    <option>1M+</option>
+                </select>
+            </div>
+            
+            <!-- Influencers Grid -->
+            <div class="grid grid-4">
+                <div class="card profile-card filterable-item" data-category="fashion">
+                    <img src="https://i.pravatar.cc/300?img=1" alt="Sarah Johnson" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Sarah Johnson</h3>
+                    <p class="profile-category">Fashion & Lifestyle</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">2.5M</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">4.8%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="tech">
+                    <img src="https://i.pravatar.cc/300?img=2" alt="Mike Chen" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Mike Chen</h3>
+                    <p class="profile-category">Tech & Gaming</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">1.8M</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">5.2%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="beauty">
+                    <img src="https://i.pravatar.cc/300?img=3" alt="Emma Davis" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Emma Davis</h3>
+                    <p class="profile-category">Beauty & Wellness</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">3.2M</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">6.1%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="travel">
+                    <img src="https://i.pravatar.cc/300?img=4" alt="Alex Martinez" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Alex Martinez</h3>
+                    <p class="profile-category">Travel & Adventure</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">1.5M</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">4.5%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="lifestyle">
+                    <img src="https://i.pravatar.cc/300?img=5" alt="Jessica Lee" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Jessica Lee</h3>
+                    <p class="profile-category">Lifestyle & Food</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">950K</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">5.8%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="fitness">
+                    <img src="https://i.pravatar.cc/300?img=6" alt="David Kim" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">David Kim</h3>
+                    <p class="profile-category">Fitness & Health</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">2.1M</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">4.9%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="tech">
+                    <img src="https://i.pravatar.cc/300?img=7" alt="Rachel Green" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Rachel Green</h3>
+                    <p class="profile-category">Tech Reviews</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">1.3M</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">5.5%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+                
+                <div class="card profile-card filterable-item" data-category="fashion">
+                    <img src="https://i.pravatar.cc/300?img=8" alt="Tom Wilson" class="profile-avatar">
+                    <div class="verified-badge"><i class="fas fa-check-circle"></i> Verified</div>
+                    <h3 class="profile-name">Tom Wilson</h3>
+                    <p class="profile-category">Men's Fashion</p>
+                    <div class="profile-stats">
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">875K</div>
+                            <div class="profile-stat-label">Followers</div>
+                        </div>
+                        <div class="profile-stat">
+                            <div class="profile-stat-value">4.2%</div>
+                            <div class="profile-stat-label">Engagement</div>
+                        </div>
+                    </div>
+                    <a href="influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                </div>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="flex justify-center mt-5 gap-2">
+                <button class="btn btn-secondary btn-sm"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn btn-primary btn-sm">1</button>
+                <button class="btn btn-secondary btn-sm">2</button>
+                <button class="btn btn-secondary btn-sm">3</button>
+                <button class="btn btn-secondary btn-sm"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <i class="fas fa-bolt"></i> NexGen
+                    </div>
+                    <p class="footer-description">
+                        The premier platform connecting brands with top-tier influencers and content creators worldwide.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/influencers.html">Influencers</a></li>
+                        <li><a href="pages/pricing.html">Pricing</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexgen.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexGen. All rights reserved. Made with <i class="fas fa-heart" style="color: var(--danger-color);"></i> by NexGen Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+

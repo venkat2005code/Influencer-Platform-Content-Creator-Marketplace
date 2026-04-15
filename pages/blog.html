@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="../index.html" class="navbar-brand">
+                <i class="fas fa-bolt"></i> NexGen
+            </a>
+            
+            <ul class="navbar-menu" style="margin-left: auto;">
+                <li class="navbar-item navbar-dropdown">
+                    <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+                        Home <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Home pages">
+                        <li><a href="../index.html">Home 1</a></li>
+                        <li><a href="home-2.html">Home 2</a></li>
+                    </ul>
+                </li>
+                <li class="navbar-item">
+                    <a href="about.html">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="services.html">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="blog.html" class="active">Blog</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="pricing.html">Pricing</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="dashboard.html">Dashboard</a>
+                </li>
+                   <li class="navbar-item">
+                  <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL">
+                    <i class="fas fa-language"></i>
+                </button>
+                </li>
+                <li class="navbar-item">
+                <button id="theme-toggle" class="btn btn-sm btn-secondary" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                </li>
+                 <li class="navbar-item">
+                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                </li>
+                 <li>
+                <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+                </li>
+            </ul>
+            
+            <div class="navbar-actions">
+                
+                
+                <button class="mobile-menu-toggle">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 40vh;">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content text-center" style="max-width: 100%;">
+                <h1 class="hero-title">Our Blog</h1>
+                <p class="hero-subtitle">Insights, tips, and trends in influencer marketing</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <!-- Filter Buttons -->
+            <div class="flex justify-center gap-2 mb-4" style="flex-wrap: wrap;">
+                <button class="btn btn-primary btn-sm filter-btn active" data-filter="all">All Posts</button>
+                <button class="btn btn-secondary btn-sm filter-btn" data-filter="marketing">Marketing</button>
+                <button class="btn btn-secondary btn-sm filter-btn" data-filter="tips">Tips & Tricks</button>
+                <button class="btn btn-secondary btn-sm filter-btn" data-filter="trends">Trends</button>
+                <button class="btn btn-secondary btn-sm filter-btn" data-filter="case-studies">Case Studies</button>
+            </div>
+            
+            <div class="grid grid-3">
+                <article class="card filterable-item" data-category="marketing" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600" alt="Blog post" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">Marketing</span>
+                            <span style="color: var(--text-muted); font-size: 0.75rem;"><i class="far fa-calendar"></i> Jan 15, 2026</span>
+                        </div>
+                        <h3 style="margin-bottom: 0.75rem;">10 Influencer Marketing Strategies for 2026</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">Discover the latest strategies that top brands are using to maximize their ROI with influencer partnerships.</p>
+                        <a href="blog-details.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="card filterable-item" data-category="tips" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600" alt="Blog post" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background: rgba(16, 185, 129, 0.1); color: var(--success-color); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">Tips</span>
+                            <span style="color: var(--text-muted); font-size: 0.75rem;"><i class="far fa-calendar"></i> Jan 12, 2026</span>
+                        </div>
+                        <h3 style="margin-bottom: 0.75rem;">How to Choose the Right Influencer for Your Brand</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">A comprehensive guide to finding influencers who align with your brand values and target audience.</p>
+                        <a href="blog-details.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="card filterable-item" data-category="trends" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600" alt="Blog post" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background: rgba(236, 72, 153, 0.1); color: var(--secondary-color); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">Trends</span>
+                            <span style="color: var(--text-muted); font-size: 0.75rem;"><i class="far fa-calendar"></i> Jan 10, 2026</span>
+                        </div>
+                        <h3 style="margin-bottom: 0.75rem;">The Rise of Micro-Influencers in Digital Marketing</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">Why brands are shifting their focus to micro-influencers and how this trend is reshaping the industry.</p>
+                        <a href="blog-details.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="card filterable-item" data-category="case-studies" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600" alt="Blog post" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background: rgba(245, 158, 11, 0.1); color: var(--warning-color); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">Case Study</span>
+                            <span style="color: var(--text-muted); font-size: 0.75rem;"><i class="far fa-calendar"></i> Jan 8, 2026</span>
+                        </div>
+                        <h3 style="margin-bottom: 0.75rem;">Case Study: How BrandX Achieved 500% ROI</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">An in-depth look at a successful influencer campaign that exceeded all expectations.</p>
+                        <a href="blog-details.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="card filterable-item" data-category="marketing" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600" alt="Blog post" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background: rgba(139, 92, 246, 0.1); color: var(--primary-color); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">Marketing</span>
+                            <span style="color: var(--text-muted); font-size: 0.75rem;"><i class="far fa-calendar"></i> Jan 5, 2026</span>
+                        </div>
+                        <h3 style="margin-bottom: 0.75rem;">Content Creation Best Practices for Influencers</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">Essential tips for creating engaging content that resonates with your audience.</p>
+                        <a href="blog-details.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="card filterable-item" data-category="tips" style="padding: 0; overflow: hidden;">
+                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=600" alt="Blog post" style="width: 100%; height: 200px; object-fit: cover;">
+                    <div style="padding: 1.5rem;">
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span style="background: rgba(16, 185, 129, 0.1); color: var(--success-color); padding: 0.25rem 0.75rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">Tips</span>
+                            <span style="color: var(--text-muted); font-size: 0.75rem;"><i class="far fa-calendar"></i> Jan 3, 2026</span>
+                        </div>
+                        <h3 style="margin-bottom: 0.75rem;">Measuring Campaign Success: Key Metrics to Track</h3>
+                        <p style="color: var(--text-secondary); font-size: 0.875rem; margin-bottom: 1rem;">Learn which metrics matter most when evaluating your influencer marketing campaigns.</p>
+                        <a href="blog-details.html" class="btn btn-outline btn-sm">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Pagination -->
+            <div class="flex justify-center mt-5 gap-2">
+                <button class="btn btn-secondary btn-sm"><i class="fas fa-chevron-left"></i></button>
+                <button class="btn btn-primary btn-sm">1</button>
+                <button class="btn btn-secondary btn-sm">2</button>
+                <button class="btn btn-secondary btn-sm">3</button>
+                <button class="btn btn-secondary btn-sm"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-brand">
+                        <i class="fas fa-bolt"></i> NexGen
+                    </div>
+                    <p class="footer-description">
+                        The premier platform connecting brands with top-tier influencers and content creators worldwide.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="pages/about.html">About Us</a></li>
+                        <li><a href="pages/services.html">Services</a></li>
+                        <li><a href="pages/influencers.html">Influencers</a></li>
+                        <li><a href="pages/pricing.html">Pricing</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Business Ave, Suite 100</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@nexgen.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 NexGen. All rights reserved. Made with <i class="fas fa-heart" style="color: var(--danger-color);"></i> by NexGen Team</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
+
+
+

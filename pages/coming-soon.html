@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon - NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .coming-soon {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .coming-soon::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,165.3C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        .countdown {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 3rem 0;
+            flex-wrap: wrap;
+        }
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            border-radius: 1rem;
+            min-width: 120px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .countdown-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: white;
+            display: block;
+        }
+        .countdown-label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <div style="position: relative; z-index: 1; text-align: center; color: white; max-width: 800px; padding: 2rem;">
+            <div style="font-size: 4rem; margin-bottom: 1rem;">
+                <i class="fas fa-rocket"></i>
+            </div>
+            <h1 style="font-size: 3.5rem; margin-bottom: 1rem; font-weight: 800;">Coming Soon</h1>
+            <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem;">
+                We're working hard to bring you something amazing. Stay tuned for our launch!
+            </p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">30</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">12</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">45</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">30</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+            
+            <!-- Newsletter Signup -->
+            <div style="max-width: 500px; margin: 0 auto;">
+                <p style="margin-bottom: 1rem; opacity: 0.9;">Get notified when we launch:</p>
+                <form style="display: flex; gap: 1rem;" onsubmit="event.preventDefault(); alert('Thank you! You\'ll be notified.');">
+                    <input type="email" placeholder="Enter your email" required 
+                           style="flex: 1; padding: 1rem; border: none; border-radius: 0.5rem; font-size: 1rem;">
+                    <button type="submit" class="btn btn-primary btn-lg" style="background: white; color: #667eea;">
+                        Notify Me
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Social Links -->
+            <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 1rem;">
+                <a href="#" style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; transition: all 0.3s;">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; transition: all 0.3s;">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; transition: all 0.3s;">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" style="width: 50px; height: 50px; background: rgba(255,255,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.25rem; transition: all 0.3s;">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+            
+            <a href="../index.html" style="display: inline-block; margin-top: 2rem; color: white; opacity: 0.8;">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+    </div>
+    
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const launchDate = new Date();
+            launchDate.setDate(launchDate.getDate() + 30);
+            
+            setInterval(() => {
+                const now = new Date().getTime();
+                const distance = launchDate - now;
+                
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            }, 1000);
+        }
+        
+        updateCountdown();
+    </script>
+</body>
+</html>

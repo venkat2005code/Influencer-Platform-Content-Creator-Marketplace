@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));">
+    <div class="card" style="max-width: 500px; width: 90%; padding: 3rem;">
+        <div class="text-center mb-4">
+            <h1 style="font-size: 2rem;"><i class="fas fa-bolt" style="color: var(--primary-color);"></i> Create Account</h1>
+            <p style="color: var(--text-secondary);">Join our community today</p>
+        </div>
+        
+        <form data-validate>
+            <div class="grid grid-2" style="gap: 1rem;">
+                <div class="form-group">
+                    <label class="form-label">First Name</label>
+                    <input type="text" class="form-input" required placeholder="John">
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Last Name</label>
+                    <input type="text" class="form-input" required placeholder="Doe">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-input" required placeholder="you@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Account Type</label>
+                <select class="form-select" required>
+                    <option value="">Select account type</option>
+                    <option>Brand/Business</option>
+                    <option>Influencer/Creator</option>
+                    <option>Agency</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-input" required minlength="8" placeholder="Minimum 8 characters">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Confirm Password</label>
+                <input type="password" class="form-input" required placeholder="Repeat password">
+            </div>
+            
+            <label style="display: flex; align-items: start; gap: 0.5rem; margin-bottom: 1.5rem; cursor: pointer;">
+                <input type="checkbox" required style="margin-top: 0.25rem;">
+                <span style="font-size: 0.875rem; color: var(--text-secondary);">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
+            </label>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+        </form>
+        
+        <div class="text-center mt-3">
+            <p style="color: var(--text-secondary);">Already have an account? <a href="login.html">Sign in</a></p>
+        </div>
+    </div>
+    
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

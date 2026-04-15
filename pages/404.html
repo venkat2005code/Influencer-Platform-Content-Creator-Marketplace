@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+            text-align: center;
+            padding: 2rem;
+        }
+        .error-code {
+            font-size: 8rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-page">
+        <div>
+            <div class="error-code">404</div>
+            <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Oops! Page Not Found</h1>
+            <p style="color: var(--text-secondary); font-size: 1.125rem; max-width: 500px; margin: 0 auto 2rem;">
+                The page you're looking for seems to have wandered off into the digital void. Let's get you back on track!
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="../index.html" class="btn btn-primary btn-lg">
+                    <i class="fas fa-home"></i> Go Home
+                </a>
+                <a href="contact.html" class="btn btn-secondary btn-lg">
+                    <i class="fas fa-envelope"></i> Contact Support
+                </a>
+            </div>
+            
+            <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; color: var(--primary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div style="font-weight: 600;">Search</div>
+                    <div style="font-size: 0.875rem; color: var(--text-muted);">Find what you need</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; color: var(--secondary-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-sitemap"></i>
+                    </div>
+                    <div style="font-weight: 600;">Sitemap</div>
+                    <div style="font-size: 0.875rem; color: var(--text-muted);">Browse all pages</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 2rem; color: var(--accent-color); margin-bottom: 0.5rem;">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <div style="font-weight: 600;">Help Center</div>
+                    <div style="font-size: 0.875rem; color: var(--text-muted);">Get assistance</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
