@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
 </head>
 <body>
     <nav class="navbar">
@@ -40,8 +41,12 @@
                 <li class="navbar-item">
                     <a href="contact.html">Contact</a>
                 </li>
-                <li class="navbar-item">
-                    <a href="dashboard.html">Dashboard</a>
+                <li class="navbar-item navbar-dropdown">
+                    <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu" aria-label="Dashboard options">
+                        <li><a href="user-dashboard.html">User Dashboard</a></li>
+                        <li><a href="admin-dashboard.html">Admin Dashboard</a></li>
+                    </ul>
                 </li>
                    <li class="navbar-item">
                   <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL">
@@ -119,7 +124,7 @@
                         </div>
                         
                         <div style="padding: 1.5rem; border: 2px solid var(--primary-color); border-radius: 0.5rem; position: relative;">
-                            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: white; padding: 0.25rem 1rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600;">POPULAR</div>
+                            <div style="position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-color); color: white; padding: 0.25rem 1rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600; white-space: nowrap;">POPULAR</div>
                             <h4>Professional</h4>
                             <div style="font-size: 2rem; font-weight: 700; color: var(--primary-color); margin: 1rem 0;">$249<span style="font-size: 1rem; color: var(--text-secondary);">/month</span></div>
                             <ul style="list-style: none; margin: 1rem 0;">
@@ -152,9 +157,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">
+                    <a href="../index.html" class="footer-brand" style="text-decoration: none; color: inherit; display: inline-block;">
                         <i class="fas fa-bolt"></i> NexGen
-                    </div>
+                    </a>
                     <p class="footer-description">
                         The premier platform connecting brands with top-tier influencers and content creators worldwide.
                     </p>

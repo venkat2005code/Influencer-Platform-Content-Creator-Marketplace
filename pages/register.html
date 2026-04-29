@@ -7,11 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
 </head>
-<body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));">
-    <div class="card" style="max-width: 500px; width: 90%; padding: 3rem;">
+<body style="min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary)); padding: 2rem 0; box-sizing: border-box; overflow-y: auto;">
+    <div style="position: fixed; top: 1.5rem; right: 1.5rem; display: flex; gap: 0.75rem; z-index: 1000;">
+        <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL">
+            <i class="fas fa-language"></i>
+        </button>
+        <button id="theme-toggle" class="btn btn-sm btn-secondary" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+    <div class="card auth-card">
         <div class="text-center mb-4">
-            <h1 style="font-size: 2rem;"><i class="fas fa-bolt" style="color: var(--primary-color);"></i> Create Account</h1>
+            <a href="../index.html" style="color: inherit;"><h1 style="font-size: 2.5rem; margin-bottom: 0.5rem;"><i class="fas fa-bolt" style="color: var(--primary-color);"></i> NexGen</h1></a>
             <p style="color: var(--text-secondary);">Join our community today</p>
         </div>
         
@@ -58,7 +67,10 @@
                 <span style="font-size: 0.875rem; color: var(--text-secondary);">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></span>
             </label>
             
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+            <div class="auth-buttons" style="display: flex; gap: 1rem;">
+                <a href="user-dashboard.html" class="btn btn-primary" style="flex: 1; justify-content: center; text-decoration: none;">Register as Influencer</a>
+                <a href="admin-dashboard.html" class="btn btn-secondary" style="flex: 1; justify-content: center; text-decoration: none;">Register as Admin</a>
+            </div>
         </form>
         
         <div class="text-center mt-3">

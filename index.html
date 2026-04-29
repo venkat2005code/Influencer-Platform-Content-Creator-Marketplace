@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
@@ -16,6 +16,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 </head>
 <body>
     <!-- Navigation -->
@@ -50,8 +51,12 @@
                 <li class="navbar-item">
                     <a href="pages/contact.html">Contact</a>
                 </li>
-                <li class="navbar-item">
-                    <a href="pages/dashboard.html">Dashboard</a>
+                <li class="navbar-item navbar-dropdown">
+                    <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Dashboard <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu" aria-label="Dashboard options">
+                        <li><a href="pages/user-dashboard.html">User Dashboard</a></li>
+                        <li><a href="pages/admin-dashboard.html">Admin Dashboard</a></li>
+                    </ul>
                 </li>
                    <li class="navbar-item">
                   <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL">
@@ -64,10 +69,10 @@
                 </button>
                 </li>
                  <li class="navbar-item">
-                <a href="login.html" class="btn btn-outline btn-sm">Login</a>
+                <a href="pages/login.html" class="btn btn-outline btn-sm">Login</a>
                 </li>
                  <li>
-                <a href="register.html" class="btn btn-primary btn-sm">Get Started</a>
+                <a href="pages/register.html" class="btn btn-primary btn-sm">Get Started</a>
                 </li>
             </ul>
             
@@ -82,12 +87,12 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="container">
-            <div class="hero-content fade-in">
+    <section class="hero" style="background-image: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'); background-size: cover; background-position: center; position: relative;">
+        <div class="hero-bg" style="background: rgba(0,0,0,0.5); opacity: 1;"></div>
+        <div class="container" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%;">
+            <div class="hero-content fade-in text-center" style="display: flex; flex-direction: column; align-items: center;">
                 <h1 class="hero-title">Connect with Top Influencers & Creators</h1>
-                <p class="hero-subtitle">
+                <p class="hero-subtitle" style="color: #f3f4f6;">
                     The ultimate platform for brands to discover, collaborate, and grow with verified influencers 
                     and content creators across all niches.
                 </p>
@@ -100,18 +105,18 @@
                     </a>
                 </div>
                 
-                <div class="hero-stats">
+                <div class="hero-stats" style="justify-content: center;">
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="50000">0</div>
-                        <div class="stat-label">Active Influencers</div>
+                        <div class="stat-number counter" data-target="50000" style="color: white;">0</div>
+                        <div class="stat-label" style="color: #e5e7eb;">Active Influencers</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="10000">0</div>
-                        <div class="stat-label">Brand Partners</div>
+                        <div class="stat-number counter" data-target="10000" style="color: white;">0</div>
+                        <div class="stat-label" style="color: #e5e7eb;">Brand Partners</div>
                     </div>
                     <div class="stat-item">
-                        <div class="stat-number counter" data-target="100000">0</div>
-                        <div class="stat-label">Successful Campaigns</div>
+                        <div class="stat-number counter" data-target="100000" style="color: white;">0</div>
+                        <div class="stat-label" style="color: #e5e7eb;">Successful Campaigns</div>
                     </div>
                 </div>
             </div>
@@ -211,7 +216,9 @@
                         </div>
                     </div>
                     
-                    <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
                 </div>
                 
                 <!-- Influencer Card 2 -->
@@ -234,7 +241,9 @@
                         </div>
                     </div>
                     
-                    <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
                 </div>
                 
                 <!-- Influencer Card 3 -->
@@ -257,7 +266,9 @@
                         </div>
                     </div>
                     
-                    <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
                 </div>
                 
                 <!-- Influencer Card 4 -->
@@ -280,7 +291,9 @@
                         </div>
                     </div>
                     
-                    <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    <div style="display: flex; justify-content: center;">
+                        <a href="pages/influencer-profile.html" class="btn btn-primary btn-sm">View Profile</a>
+                    </div>
                 </div>
             </div>
             
@@ -380,6 +393,10 @@
                     </div>
                 </div>
             </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-primary btn-lg">Read More Reviews <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
     </section>
 
@@ -408,9 +425,9 @@
         <div class="container">
             <div class="footer-grid">
                 <div>
-                    <div class="footer-brand">
+                    <a href="index.html" class="footer-brand" style="text-decoration: none; color: inherit; display: inline-block;">
                         <i class="fas fa-bolt"></i> NexGen
-                    </div>
+                    </a>
                     <p class="footer-description">
                         The premier platform connecting brands with top-tier influencers and content creators worldwide.
                     </p>

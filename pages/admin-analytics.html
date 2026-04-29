@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - NexGen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="../index.html" style="text-decoration: none; color: inherit;">
+                    <h2 style="font-size: 1.5rem;"><i class="fas fa-bolt" style="color: var(--primary-color);"></i> NexGen</h2>
+                </a>
+            </div>
+            
+            <ul class="sidebar-menu">
+                <li class="sidebar-item">
+                    <a href="admin-dashboard.html" class="sidebar-link">
+                        <i class="fas fa-home"></i> Dashboard
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-users.html" class="sidebar-link">
+                        <i class="fas fa-users"></i> Users
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-influencers.html" class="sidebar-link">
+                        <i class="fas fa-star"></i> Influencers
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-campaigns.html" class="sidebar-link">
+                        <i class="fas fa-bullseye"></i> Campaigns
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-orders.html" class="sidebar-link">
+                        <i class="fas fa-shopping-cart"></i> Orders
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-messages.html" class="sidebar-link">
+                        <i class="fas fa-envelope"></i> Messages
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-analytics.html" class="sidebar-link active">
+                        <i class="fas fa-chart-bar"></i> Analytics
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="admin-settings.html" class="sidebar-link">
+                        <i class="fas fa-cog"></i> Settings
+                    </a>
+                </li>
+                <li class="sidebar-item" style="margin-top: 2rem;">
+                    <a href="../index.html" class="sidebar-link">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <div class="dashboard-header">
+                <div>
+                    <button class="mobile-menu-toggle dashboard-menu-toggle" aria-label="Toggle sidebar menu" style="margin-bottom: 0.75rem;">
+                        <span class="hamburger"></span>
+                    </button>
+                    <h1 style="font-size: 2rem;">Analytics & Insights</h1>
+                    <p style="color: var(--text-secondary);">Deep dive into platform performance and demographics.</p>
+                </div>
+                <div style="display: flex; gap: 1rem; align-items: center;">
+                    <button id="rtl-toggle" class="btn btn-sm btn-secondary" title="Toggle RTL"><i class="fas fa-language"></i></button>
+                    <button id="theme-toggle" class="btn btn-sm btn-secondary"><i class="fas fa-moon"></i></button>
+                    <div style="position: relative;">
+                        <i class="fas fa-bell" style="font-size: 1.25rem; cursor: pointer;"></i>
+                        <span style="position: absolute; top: -5px; right: -5px; background: var(--danger-color); color: white; border-radius: 50%; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; font-size: 0.625rem; font-weight: 700;">3</span>
+                    </div>
+                    <img src="https://i.pravatar.cc/100?img=11" alt="Admin" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                </div>
+            </div>
+
+            
+            <div class="grid grid-2 mb-4">
+                <div class="chart-container">
+                    <h3 style="margin-bottom: 1.5rem;">User Growth</h3>
+                    <div style="position: relative; height: 300px; width: 100%;">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3 style="margin-bottom: 1.5rem;">Platform Distribution</h3>
+                    <div style="position: relative; height: 300px; width: 100%;">
+                        <canvas id="platformChart"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3 style="margin-bottom: 1.5rem;">Campaign Performance by Category</h3>
+                <div style="position: relative; height: 300px; width: 100%;">
+                    <canvas id="categoryChart"></canvas>
+                </div>
+            </div>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Growth Chart
+                    new Chart(document.getElementById('growthChart'), {
+                        type: 'line',
+                        data: {
+                            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                            datasets: [{
+                                label: 'New Users',
+                                data: [5000, 7200, 6800, 9500, 11200, 15000],
+                                borderColor: '#8b5cf6',
+                                backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                                fill: true,
+                                tension: 0.4
+                            }]
+                        },
+                        options: { responsive: true, maintainAspectRatio: false }
+                    });
+                    
+                    // Platform Chart
+                    new Chart(document.getElementById('platformChart'), {
+                        type: 'doughnut',
+                        data: {
+                            labels: ['Instagram', 'TikTok', 'YouTube', 'Twitter'],
+                            datasets: [{
+                                data: [45, 30, 20, 5],
+                                backgroundColor: ['#E1306C', '#000000', '#FF0000', '#1DA1F2'],
+                                borderWidth: 0
+                            }]
+                        },
+                        options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right' } } }
+                    });
+                    
+                    // Category Chart
+                    new Chart(document.getElementById('categoryChart'), {
+                        type: 'bar',
+                        data: {
+                            labels: ['Fashion', 'Tech', 'Beauty', 'Gaming', 'Fitness', 'Food'],
+                            datasets: [{
+                                label: 'Avg Engagement Rate (%)',
+                                data: [4.8, 5.2, 6.1, 4.5, 3.8, 5.5],
+                                backgroundColor: '#06b6d4'
+                            }]
+                        },
+                        options: { responsive: true, maintainAspectRatio: false }
+                    });
+                });
+            </script>
+        </main>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Initialize Charts
+        document.addEventListener('DOMContentLoaded', function() {
+            // Revenue Chart
+            const revenueCtx = document.getElementById('revenueChart').getContext('2d');
+            new Chart(revenueCtx, {
+                type: 'line',
+                data: {
+                    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                    datasets: [{
+                        label: 'Revenue ($)',
+                        data: [12000, 19000, 15000, 25000, 22000, 30000],
+                        borderColor: '#8b5cf6',
+                        backgroundColor: 'rgba(139, 92, 246, 0.1)',
+                        tension: 0.4,
+                        fill: true
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            display: false
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return '$' + value.toLocaleString();
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+
+            // User Statistics Chart
+            const userCtx = document.getElementById('userChart').getContext('2d');
+            new Chart(userCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Influencers', 'Brands', 'Agencies'],
+                    datasets: [{
+                        data: [12500, 8500, 2000],
+                        backgroundColor: ['#8b5cf6', '#ec4899', '#06b6d4'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom'
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
