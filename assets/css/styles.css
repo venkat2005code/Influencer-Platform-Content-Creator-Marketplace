@@ -752,9 +752,10 @@ a:hover {
 }
 
 .pricing-features li::before {
-    content: '✓';
+    content: '\f00c';
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
     color: var(--success-color);
-    font-weight: bold;
 }
 
 /* Footer */
